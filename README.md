@@ -45,3 +45,5 @@ main 브랜치 push 시 GitHub Actions가 문법 검사 후 공개 파일만 Pag
 AI 이론 듣기: Microsoft ko-KR-SunHiNeural 음성으로 생성한 20개 MP3를 정적으로 제공합니다. 재생·일시정지·탐색·속도 조절을 지원하며 단원 이동 시 중지됩니다. `python scripts/build_audio.py`로 생성합니다(edge-tts 필요). 본문 해시가 같고 파일이 정상인 단원은 재사용하며, 본문이 바뀐 단원은 재생성합니다. assets/audio/manifest.json에는 음성 및 본문 해시를 기록합니다. API 키는 브라우저에 포함하지 않습니다.
 
 전체 객관식 전환: 기존 객관식 130문항을 유지하고 단답형 30·빈칸 20·서술형 20문항을 5지선다로 변형했습니다. content/choice-conversions.json에 검토 가능한 보기와 질문을 기록하고 scripts/build_data.py로 생성합니다. EBSi 원문 이미지와 해설은 보존하며 변형 표시를 함께 제공합니다. 기존 주관식 답안은 학습기록의 legacyWritten에 보존하고, 해당 문항을 새로 풀도록 합니다. 전체 문제 수는 200개입니다. tests/choice_test.py는 전 문항 채점, 기존 기록 이관, 재시도, 북마크, 모의고사 및 모바일 레이아웃을 검증합니다.
+
+카카오톡 링크 미리보기: index.html에 정적 OG 메타데이터를 제공하고 assets/share-kakao-v1.jpg(1200×630 JPEG)를 대표 이미지로 사용합니다. python scripts/build_share_image.py로 재생성할 수 있습니다. 해시 경로는 서버에 전송되지 않으므로 단원별 주소도 공통 사이트 미리보기를 사용합니다. 기존 URL의 카카오 캐시는 카카오 개발자 도구에서 별도로 초기화해야 할 수 있습니다.
