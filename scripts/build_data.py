@@ -2,6 +2,8 @@ from pathlib import Path
 import json
 ROOT=Path(__file__).resolve().parents[1]
 units=json.loads((ROOT/'content/units.json').read_text(encoding='utf-8'))
+highlights=json.loads((ROOT/'content/theory-highlights.json').read_text(encoding='utf-8'))
+for u in units:u['highlights']=highlights[str(u['id'])]
 qs=json.loads((ROOT/'content/ebs.json').read_text(encoding='utf-8'))
 for u in units:
     for typ,key in [('blank','blank'),('essay','essay')]:
