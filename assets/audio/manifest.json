@@ -1,0 +1,162 @@
+[
+  {
+    "unit": 1,
+    "file": "theory-01.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "fc64547347c3eeea49efd1ac3441adca997ef6a73c8b7877a3592312a03cd9e9",
+    "bytes": 616608
+  },
+  {
+    "unit": 2,
+    "file": "theory-02.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "a343b3a9d817042dfa9da80959a8b228eebdde446f5e9c28c1c35842b75e83ad",
+    "bytes": 587376
+  },
+  {
+    "unit": 3,
+    "file": "theory-03.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "4558079a8646507a49725c6ae6853b091902694e01fa76dc4c3a41d36d479eb5",
+    "bytes": 583488
+  },
+  {
+    "unit": 4,
+    "file": "theory-04.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "2af4456478a116e27bd4d42c06fe7a8c7478d6872b69d2040b4f5110b2bc9b39",
+    "bytes": 627552
+  },
+  {
+    "unit": 5,
+    "file": "theory-05.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "4f6471b55614210cef1f0f8dad289541f58558b0f5d8876fc242f8c2845cd341",
+    "bytes": 602352
+  },
+  {
+    "unit": 6,
+    "file": "theory-06.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "95bb9010cb56c02b71fecd2fd10471ac96ea500539fa703284fe89263ee3365e",
+    "bytes": 614016
+  },
+  {
+    "unit": 7,
+    "file": "theory-07.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "63aa5ae9ec188a787cbe552928776bb2ceac32dbfef4e940c5935e2aa60c0690",
+    "bytes": 587376
+  },
+  {
+    "unit": 8,
+    "file": "theory-08.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "a95ec7b8e80696f6efbec816cd99bdcafdf43931de9dbef35a1c94181d55a7dc",
+    "bytes": 602064
+  },
+  {
+    "unit": 9,
+    "file": "theory-09.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "26f0879a3eb6321ff02a856ecfc40efbe3795888f69f08ca49649399913706c5",
+    "bytes": 601488
+  },
+  {
+    "unit": 10,
+    "file": "theory-10.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "f3a2e8619fe9446b4e70c4b15b6b46c6604e795900db0578c1c94fa9cbaaad86",
+    "bytes": 576864
+  },
+  {
+    "unit": 11,
+    "file": "theory-11.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "ee343afa1438b8ca83be1edf476bdb1d7d351f3c29d5cac8d96652d337f2d530",
+    "bytes": 650448
+  },
+  {
+    "unit": 12,
+    "file": "theory-12.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "b352b4e5dc9f98875b2194acc92891eca205c0cbdf6b60342accba8d9a5d5dde",
+    "bytes": 590688
+  },
+  {
+    "unit": 13,
+    "file": "theory-13.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "001d439b3960af88b81053db98080129038945df1d6b4936c56c351cd118b24b",
+    "bytes": 603360
+  },
+  {
+    "unit": 14,
+    "file": "theory-14.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "b1123eb8c9d29998e19cf60ff24ec3b65238e5a4b364993a1f6de246fc59a2b6",
+    "bytes": 589824
+  },
+  {
+    "unit": 15,
+    "file": "theory-15.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "6b6f5b24efa7369e1762ed49982406e641f47367be8b5397863f90d7271f3ffe",
+    "bytes": 597312
+  },
+  {
+    "unit": 16,
+    "file": "theory-16.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "9cbca6540286ffec6248793d44bd717cf68062307ad8afed4d6ff7d8f633548e",
+    "bytes": 612144
+  },
+  {
+    "unit": 17,
+    "file": "theory-17.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "1055b67829b7257fd1d79a7ff826c8ac17ca3dc19b612424edc46f441c36b948",
+    "bytes": 615888
+  },
+  {
+    "unit": 18,
+    "file": "theory-18.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "92693f8bed863359e75714c7d1de99818439f96d9e3c28195d76016a93118a33",
+    "bytes": 604224
+  },
+  {
+    "unit": 19,
+    "file": "theory-19.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "778491b8c4017db9ea1f5bb4294160d7dd096a2ddbc13069886b5efad8793aba",
+    "bytes": 604224
+  },
+  {
+    "unit": 20,
+    "file": "theory-20.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "rate": "-5%",
+    "textSha256": "3e36338b14e5affd8c8806ec585bc18086d19edb742fe4d1fd9644c0790017c4",
+    "bytes": 655920
+  }
+]
