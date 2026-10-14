@@ -17,3 +17,7 @@ main:focus{outline:none}
 @media print{.lumi-banner{display:none}}
 
 .theory-audio{padding:18px;background:#f5f8f5;border:1px solid var(--line);border-radius:12px}.theory-audio audio{display:block;width:100%;margin-top:16px}.audio-caption{font-size:.77rem;color:var(--muted);margin:10px 0 0}.audio-speed{display:flex;align-items:center;gap:8px;font-size:.8rem}.audio-speed select{min-height:42px;padding:5px 10px}.theory-audio .voice-status:empty{display:none}
+
+.choices.text-choices{display:grid;grid-template-columns:1fr;gap:10px}.text-choices button{justify-content:flex-start;text-align:left;align-items:flex-start;padding:14px;line-height:1.65;white-space:normal}.text-choices button>span:first-child{flex-shrink:0}.text-choices button>span:last-child{overflow-wrap:anywhere;word-break:keep-all}.text-choices button[aria-pressed=true]{border:2px solid var(--green);background:#eaf2ed}
+
+.choices.text-choices button{font-size:.95rem;font-weight:550}
