@@ -7,5 +7,5 @@ with sync_playwright() as p:
     page.goto((root/'scripts/share-card.html').as_uri())
     page.evaluate('document.fonts.ready')
     page.locator('.lumi').evaluate('(img)=>img.decode()')
-    page.screenshot(path=str(root/'assets/share-kakao-v1.jpg'),type='jpeg',quality=90)
+    page.screenshot(path=str(root/'assets/share-kakao-v2.jpg'),type='jpeg',quality=90)
     browser.close()

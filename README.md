@@ -51,3 +51,16 @@ AI 이론 듣기: Microsoft ko-KR-SunHiNeural 음성으로 생성한 20개 MP3�
 상단 교표 개선: 220×42 합성 로고 대신 학교상징 페이지의 219×205 원본 교표와 웹 폰트 학교명을 분리하여 표시합니다. 교표 원본: https://sm.sen.hs.kr/crosseditor/binary/images/2018/05/16/20180516095509850_X2SQ1XV2.png (https://sm.sen.hs.kr/96671/subMenu.do). 화면 교표는 최대 44px로 표시하여 3배율 Retina에서도 원본 픽셀 수가 충분합니다.
 
 핵심이론 시각 강조: content/theory-highlights.json에 단원별 문제풀이 핵심어를 분류하여 관리합니다. 파랑은 인물·단체, 초록은 사건·제도·개념, 주황은 연도·수치입니다. 본문·연표·헷갈리는 포인트에 적용하며 강조 켜기/끄기를 저장합니다. 원문 텍스트와 AI 음원은 변경하지 않습니다. python tests/highlight_test.py로 20개 단원의 텍스트 보존과 표시·재생 호환성을 검증합니다.
+
+
+## 통합사회2 통합
+
+기본 주소는 통합사회2를 먼저 엽니다. `?subject=social#home` / `?subject=history#home`으로 과목을 전환합니다. 기존 쿼리 없는 `#theory/12`, `#questions` 등의 한국사 링크는 유지됩니다.
+
+- 통합사회2: 3·4·5강, 핵심이론 18주제, 한국어 신경망 음원 3개, 제공 EBSi 자료의 객관식 30문항.
+- 문항별 연월·원문 번호를 표시하며, 정답은 제공 PDF 20쪽의 정답표와 대조했습니다. 해설은 별도로 작성했습니다.
+- 통합사회 기록은 `lumi.social.v1`, 한국사는 기존 `lumi.history.v1`을 사용합니다. 백업·복원과 초기화는 현재 과목에만 적용됩니다.
+- 통합사회 모의고사는 전체 범위 기준 3회 × 10문항으로, 30문항을 중복 없이 나눕니다.
+- `content/social-units.json`, `content/social-explanations.json`, `content/social-questions.json`은 검토 가능한 콘텐츠입니다. 원본 PDF는 저장소에 포함하지 않습니다.
+- 재생성: `python scripts/prepare_social_units.py`, `python scripts/build_social.py`, `python scripts/build_social_audio.py`. 원본 문제 PDF는 사용자 Downloads 폴더가 필요합니다. `prepare_social_units.py`는 topics JSON에 보완 개념을 합칩니다.
+- 검증: 로컬 4173 서버 실행 후 `python tests/social_test.py`, 기존 `tests/choice_test.py`, `tests/highlight_test.py`.

@@ -1,0 +1,23 @@
+[
+  {
+    "unit": 3,
+    "file": "assets/social/audio/theory-03.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "textSha256": "a404dabef2018d317c5621a89acb3375f84b68f5cd17f70346427346d1660952",
+    "bytes": 1530864
+  },
+  {
+    "unit": 4,
+    "file": "assets/social/audio/theory-04.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "textSha256": "116b512eac9c1d48d988cb7c36c8b3d7249ae16d630062d0ede846cb2eb1a1bc",
+    "bytes": 1627776
+  },
+  {
+    "unit": 5,
+    "file": "assets/social/audio/theory-05.mp3",
+    "voice": "ko-KR-SunHiNeural",
+    "textSha256": "ed67f169c4f549ff09379465f9fef4f1eedc011d745f0a6308f23f303aced319",
+    "bytes": 1207728
+  }
+]
