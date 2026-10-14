@@ -47,3 +47,5 @@ AI 이론 듣기: Microsoft ko-KR-SunHiNeural 음성으로 생성한 20개 MP3�
 전체 객관식 전환: 기존 객관식 130문항을 유지하고 단답형 30·빈칸 20·서술형 20문항을 5지선다로 변형했습니다. content/choice-conversions.json에 검토 가능한 보기와 질문을 기록하고 scripts/build_data.py로 생성합니다. EBSi 원문 이미지와 해설은 보존하며 변형 표시를 함께 제공합니다. 기존 주관식 답안은 학습기록의 legacyWritten에 보존하고, 해당 문항을 새로 풀도록 합니다. 전체 문제 수는 200개입니다. tests/choice_test.py는 전 문항 채점, 기존 기록 이관, 재시도, 북마크, 모의고사 및 모바일 레이아웃을 검증합니다.
 
 카카오톡 링크 미리보기: index.html에 정적 OG 메타데이터를 제공하고 assets/share-kakao-v1.jpg(1200×630 JPEG)를 대표 이미지로 사용합니다. python scripts/build_share_image.py로 재생성할 수 있습니다. 해시 경로는 서버에 전송되지 않으므로 단원별 주소도 공통 사이트 미리보기를 사용합니다. 기존 URL의 카카오 캐시는 카카오 개발자 도구에서 별도로 초기화해야 할 수 있습니다.
+
+상단 교표 개선: 220×42 합성 로고 대신 학교상징 페이지의 219×205 원본 교표와 웹 폰트 학교명을 분리하여 표시합니다. 교표 원본: https://sm.sen.hs.kr/crosseditor/binary/images/2018/05/16/20180516095509850_X2SQ1XV2.png (https://sm.sen.hs.kr/96671/subMenu.do). 화면 교표는 최대 44px로 표시하여 3배율 Retina에서도 원본 픽셀 수가 충분합니다.

@@ -21,3 +21,8 @@ main:focus{outline:none}
 .choices.text-choices{display:grid;grid-template-columns:1fr;gap:10px}.text-choices button{justify-content:flex-start;text-align:left;align-items:flex-start;padding:14px;line-height:1.65;white-space:normal}.text-choices button>span:first-child{flex-shrink:0}.text-choices button>span:last-child{overflow-wrap:anywhere;word-break:keep-all}.text-choices button[aria-pressed=true]{border:2px solid var(--green);background:#eaf2ed}
 
 .choices.text-choices button{font-size:.95rem;font-weight:550}
+
+/* Separate the original 219px emblem from live type for Retina clarity. */
+.school-brand{gap:6px}.school-identity{display:flex;align-items:center;gap:7px;min-width:0;flex:1}.school-emblem{width:32px;height:32px;object-fit:contain;flex-shrink:0}.school-wordmark{display:flex;flex-direction:column;min-width:0}.school-wordmark strong{font-size:15px;line-height:1.35;font-weight:800;letter-spacing:-.5px;white-space:nowrap;color:#176647}.school-wordmark>span{font-size:6.5px;line-height:1.8;font-weight:650;letter-spacing:-.12px;white-space:nowrap;color:#62776a}.school-brand .brand-lumi{width:32px;height:58px}
+@media(max-width:760px){.school-brand{width:310px;max-width:100%;gap:10px}.school-emblem{width:44px;height:44px}.school-identity{gap:9px}.school-wordmark strong{font-size:18px;letter-spacing:-.6px}.school-wordmark>span{font-size:8px;letter-spacing:-.12px}.school-brand .brand-lumi{width:50px;height:66px}}
+@media(min-width:761px) and (max-width:1100px){.school-wordmark strong{font-size:13px}.school-wordmark>span{font-size:5.8px}.school-emblem{width:28px;height:28px}.school-brand .brand-lumi{width:28px}}
