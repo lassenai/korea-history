@@ -1,0 +1,40 @@
+# 루미와 한국사2
+
+숙명여고 1학년의 한국사2 기말고사 준비를 위한 비공식 학습 웹사이트.
+
+배포 주소: https://lassenai.github.io/korea-history/
+
+## 구성
+- 한국사2 3개 영역 / 20개 단원 / 핵심이론 60절, 연표, 혼동 포인트
+- 제공된 EBSi 최소성취수준 학습지 원문 160문항 (객관식 130, 단답형 30)
+- 자체 제작 빈칸 20문항, 서술형 20문항: 총 200문항
+- 핵심이론 내 OX 20개 및 사건 순서 연습 별도 제공 (문제은행 200문항 집계에서 제외)
+- 단원당 1문항, 최대 20분의 객관식 모의고사 3회 (문제은행 재사용, 회차 간 중복 없음)
+- 한국어 음성 인식, 기기 음성으로 이론 읽기, 답안 저장, 서술형 자기 점검
+- 시험 범위 선택, 오답·북마크, JSON 기록 내보내기·가져오기
+
+## 실행 및 수정
+빌드 없는 HTML/CSS/JavaScript 사이트입니다. `npm start` 후 http://127.0.0.1:4173/ 에서 확인합니다.
+`content/units.json`을 수정한 뒤 `python scripts/build_data.py`로 data.js를 갱신합니다.
+제공 PDF에서 원문을 다시 추출하려면 `python scripts/extract_ebs.py`를 실행합니다 (pymupdf, pillow, pypdf 필요). 소스 PDF는 사용자의 Downloads 폴더에서 읽으며 저장소에 포함하지 않습니다.
+
+검증: `npm run check`, `python tests/verify_content.py`, `python tests/browser_test.py` (로컬 서버와 Playwright 브라우저 설치 필요).
+
+## 출처
+사용자 제공: 최소성취수준보장지도 한국사2 강의자료(103쪽)·학습지(62쪽), 개념완성 시험대비 한국사2(23쪽), 1등급 한국사 교재(23쪽).
+학평 기출 교재는 한국사1 혼합이므로 원문 문제은행에서는 제외했습니다.
+문항의 PDF 실제 쪽수와 인쇄 쪽수, 정답 쪽수는 content/ebs.json에 기록합니다. 이미지 원문의 지도, 밑줄, 사진과 선택지를 보존합니다. 이미지 텍스트도 별도 제공하나 시각 사료의 완전한 대체 텍스트는 아닙니다.
+핵심이론과 자체 제작 문항은 자료를 참고해 새로 작성했습니다. 학교/학원 기출은 검증·확보되지 않아 현재 0문항이며 학원 이름이나 연도를 추정해 붙이지 않습니다.
+
+학교 로고: https://sm.sen.hs.kr/dggb/module/file/selectImageView.do?atchFileId=2869473&fileSn=0 (공식 홈페이지, 2026-10-14 확인). 학교의 후원이나 공식 운영을 의미하지 않습니다.
+루미: 사용자가 승인한 이미지 생성 캐릭터. built-in image_gen으로 승인 시안에서 투명 배경 단독 자산 제작. 프롬프트: assets/lumi-prompt.txt.
+Pretendard 폰트 라이선스: assets/fonts/Pretendard-LICENSE.txt.
+
+## 저장·호환성
+학습기록은 `lumi.history.v1` 로컬 저장소에만 저장됩니다. 기기 간 자동 동기화와 계정 시스템은 없습니다. 백업 가져오기는 기존 기록을 교체합니다.
+음성 인식은 SpeechRecognition/webkitSpeechRecognition의 ko-KR을 사용합니다. HTTPS와 마이크 권한이 필요하며 브라우저·OS·서비스 상태에 따라 지원 여부가 달라집니다. 브라우저 음성 서비스에 오디오가 전송될 수 있습니다. 사이트는 녹음 파일을 저장하지 않습니다.
+읽어주기는 speechSynthesis와 기기 한국어 음성을 사용합니다. 음성 입력과 읽어주기는 동시에 실행되지 않습니다. 미지원 환경에서는 키보드 받아쓰기 안내가 표시됩니다.
+WebKit 자동화는 실제 iPhone의 마이크 권한·음성 인식 품질을 보증하지 않습니다. 실제 iPhone Safari 음성 입력은 사용자 기기에서 확인이 필요합니다.
+
+## 배포
+main 브랜치 push 시 GitHub Actions가 문법 검사 후 공개 파일만 Pages에 배포합니다. 연구 자료, 로컬 테스트 결과와 원본 PDF는 배포하지 않습니다.

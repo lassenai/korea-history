@@ -1,0 +1,1 @@
+{"name":"lumi-korea-history","version":"1.0.0","private":true,"scripts":{"start":"python -m http.server 4173 --bind 127.0.0.1","check":"node --check app.js && node --check voice.js && node --check data.js","build:data":"python scripts/build_data.py"}}

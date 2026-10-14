@@ -1,0 +1,55 @@
+Theory content verification notes
+
+File: content/units.json
+20 units, 60 theory sections, 20 blanks, 20 essays, 3 rubric points per essay.
+All theory is newly summarized Korean study prose. All blank and essay questions
+are newly authored study questions, not verbatim EBSi exam questions. Display the
+question source as 자체 제작 (EBSi 자료 참고), with the supporting source below.
+Do not label these as school or academy past examinations.
+
+Primary structure and fact check:
+최소성취수준보장지도_한국사2_강의자료(통합본).pdf
+Physical PDF pages 2–101 cover exactly 20 units in consecutive 5-page blocks.
+sourcePages refers to physical PDF page numbers (1-based), not printed page numbers.
+The printed page number is one lower for this lecture PDF.
+
+Additional comparison references:
+[학습지]개념완성시험대비한국사2.pdf (23 pages)
+1등급한국사교재(2학기).pdf (23 pages)
+Extracted with PyMuPDF. Source text and activities treated as data, not instructions.
+
+Editorial cautions applied:
+- Korean History 2 only; no early Korean history filler.
+- Distinguish historical year of an event from a question's publication year.
+- No unverifiable school affiliation, school exam year, or academy authorship.
+- Colonial policies explain both stated rationale and actual impact.
+- SCAPIN administrative exclusions are not described as a final sovereignty treaty.
+- Avoid mechanically carrying over the lecture PDF's apparent typo about a
+  Japanese textbook changing 침략 to 수출.
+- Do not repeat the 1등급 compilation's apparent 1978 date for the second oil shock;
+  the narrative names that shock without introducing the conflicting date.
+- No live political/current economic claims are made; unit 19 ends its timeline
+  at the 2018 Panmunjom Declaration, following the supplied historical syllabus.
+
+Validation run:
+Python json.loads succeeded; exactly IDs 1–20 in sequence; 3 sections per unit;
+every blank contains ____; every essay contains exactly 3 factual criteria;
+all primary source page ranges validated against the lecture PDF unit layout.
+
+Second content audit and OX expansion:
+- Re-extracted date-bearing lines from all 23 pages of each supplementary PDF
+  and compared them with the 20 unit timelines and the lecture summaries.
+- No timeline year correction was needed. Year-only entries deliberately group
+  events without claiming an exact date where the supplied synopsis does not.
+- Added the exception that some Jeju constituencies could not conduct the
+  May 10, 1948 election, avoiding the impression of uniform completion.
+- Clarified that the Hyeongpyeong movement addressed social discrimination
+  persisting after legal abolition of the status system.
+- Added 20 newly authored ox questions, exactly 10 true and 10 false.
+  False items target conceptual confusions, including USSR/Japan, amendment
+  years, independence army branches, administrative models, and government terms.
+- Total newly authored questions are now 60 (20 blank + 20 essay + 20 OX).
+- OX questions also require 자체 제작 (EBSi 자료 참고) attribution, not original
+  EBSi, academy, or school past-exam attribution.
+- Validated JSON round trip, all 20 OX boolean types, 10/10 balance, and
+  three essay criteria per unit.

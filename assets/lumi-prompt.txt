@@ -1,0 +1,4 @@
+Mode: built-in image_gen image editing; transparent_background=true.
+Reference: approved LUMI character concept from this conversation (2026-10-14).
+Final prompt:
+Extract and recreate ONLY the large waving LUMI bunny on the left of this approved reference as a single clean full-body website mascot asset on true transparent background. Preserve the exact character identity, cream plush fur, dark forest green cardigan, pink crossbody bag with silver star charm, book held in hand, face and proportions. Remove all text, background, shadows on background, and the other two smaller characters. Center the full character, ears and feet fully in frame, 8% clear padding on all sides. High-quality 3D render. Do not change outfit or design. No text, no logos.
